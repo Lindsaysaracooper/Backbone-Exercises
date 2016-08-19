@@ -1,25 +1,15 @@
-# Basic Build with NPM scripts
-This is a project scaffolding and build tool for the TIY Austin Front-End Engineering course. Feel free to use and enjoy! Feedback and PRs welcome!
+Complete as many of the five apps as possible.
 
-## Features
-- A bare bones scaffolding for an SPA, without any libraries built in
-- A static server for serving up your dev environment via http
-- `app` directory for development, preloaded with an `index.html`, `scripts/entry.js`, `scss/main.scss` and `assets/`
-- `dist` directory for deployable code
-- es2015 and babel, including module syntax
-- sass (.scss)
+Namespace the files you create so you can have multiple views, models, etc with only one entry.js.
 
-## Installation
-- Clone this repo (or fork then clone, if you prefer)
-- Remove the git history by running `rm -rf .git`
-- Set up a new git repo
-- Run `npm install`
+Each exercise should render based on the URL, and this should be managed by the router. Create a navigation so that each page is accessible from every other page.
 
-## Use
-- `npm install` will scaffold your project AND start the dev server
-- `npm start` will start the dev server and watch for changes
-- `npm run deploy` will push the content of `dist/` to gh-pages
-- When the server is running, your site will be live on [http://localhost:8080/](http://localhost:8080/)
+a) Create a form that saves a blog post to tiny-za-server. The post should have a title and a body. It does not need to display blog posts, just save them.
 
-## Dependencies
-- `sass` [install guide here](http://sass-lang.com/install)
+b) Create a form for a person. It should have a first name, last name, address, and phone number. It should save the person to tiny-za-server.
+
+c) Create a "blog reading app", where you have a list of blog posts on the side and when you click on a post title, it opens that post in another view, but does not remove the list from the page.
+
+d) Create a bookmarking app where you can save URLs. It should have a form where you enter the URL, a title, and a "tag". There should be a list of all the URLs, as well as a list of all the tags (this should be generated dynamically from the link collection). When you click on a tag, the link list should show only those tags. Hint: which tag is selected is "application state", so could appear in your URL and/or have a view model to represent it. You can filter a collection with collection.filter(...), but be aware that it returns an array of models, not a new collection.
+
+e) Create a complete blog CMS from scratch, allowing you to create, read, update, and delete blog posts.
